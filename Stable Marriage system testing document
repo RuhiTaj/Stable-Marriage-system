@@ -1,0 +1,108 @@
+	Test Plan Document for Stable Matching 						Software
+
+Authors:
+		Jeshventh Raja T.K.  15CO248
+		Ruhi Taj 		    15CO239
+		Ritwick Mishra 	   15CO240
+
+1. Introduction
+
+1.1. Purpose: 
+The purpose of this document is to present a brief description of the testing of our software. The software is designed to find a solution to the Stable matching problem by implementing the Gale-Shapely algorithm. The stable marriage problem (also stable matching problem or SMP) is about finding a stable matching between two equally sized sets of male and female genders given an ordering of preferences for each person. 
+  
+1.2.Overview : 
+The proposed software is to arrange most stable marriage matching, according to the priority given by the both male and female. 
+
+1.3.Participants:
+The users of the software will have profiles and can set preferences to find a match to  be married. The software  is tested for various test cases in order to ensure its reliability.
+
+1.4 Authors:
+	
+2. Test strategy
+
+2.1.Aim : 
+The aim of the testing is check the working of the stable marriage matching algorithm which is based on the Gale-Shapely algorithm. The test will execute and verify the test cases, identify all defects per the entry criteria, with priorities according to the category of the defects. The expected product at the end is a fully functional stable marriage matching software that is able to handle invalid inputs as well.
+
+2.2.Priniples: 
+The test cases are very well defined to meet all the circumstances of input and outputs. Same test cases are not used to avoid repetition. The corner cases are checked to check the correctness of algorithm in all the cases. The test cases also contain invalid input cases  to test exception handling.
+
+2.3.Assumptions:
+The testing assumes that the database contains equal number of male and female users. In case of unequal number of users, the software requests for the additon of the users of opposite gender. The software assumes the priority to be set according to the five feature priority given the user.
+
+3.Scope of testing: 
+
+ The software are is tested at the beginning of the cycle for errors or bugs. The test cases in the template covers all the cases , that occur in the real-life scenario.
+
+4.Modes of Testing:  
+
+4.1. Testing of Functions:
+ 
+4.1.1. Function to enter details:
+
+Description: This function registers new users with their details.
+
+Input: The user inputs his/her details for marriage matching.
+
+Process: Once the user requsets for registaration, he/she has to enter his/her salary,
+complexion ,age and place.
+
+Expected Output: The user will be succesfully registered after entering all the details.
+  
+4.1.2.Funtion to enter priorities:
+
+Description: The function asks the user to enter the details with he/she want their partner.
+
+  Input: The user enters the the order of priority with they want their partner to be.
+
+  Process: The function saves the priorities of the individual and cal another function to set priority.
+
+  Expected Output: The priorities are saved.
+
+4.1.3.Function to prioritize:
+
+  Description:The function assigns the priority of each person in the oppsite gender according to priorities, they have entered .
+
+  Process: Based on the prioritizing algorithms, priorities are set.
+
+  Expected Output: Each person has a priority order.
+
+4.1.4.Function to assign matches:
+
+ Description: The function assigns the matches for marriage.
+
+  Process: The calculation of matches based on Gale-Shapely algorithm.
+
+  Expected Output: Stable matching pairs of opposite gender are generated and outputted to
+  each individual users.
+
+4.2.Testing of classes:
+
+4.2.1.Class for male users:
+ 
+Description: It hold the details of the male user and the qualities they would wish to have in the bride.
+ 
+4.2.2.Class for female users:
+
+Description: IIt hold the details of the female user and the qualities they would wish to have in the bridegroom.
+
+5.0 Execution Strategy
+•	There will be two cycles of testing. One for spotting errors and then to check after correcting errors. 
+•	The tester should run the program for all test cases provided in test suite.
+•	Additional test cases may be added at the tester’s discretion.
+•	The aim of testing is to thoroughly check each fragment of code to ensure error-free execution.
+
+   5.1  Entry and Exit Criteria
+•	The entry criteria refer to the desirable conditions in order to start test execution.
+•	The exit criteria are the desirable conditions that need to be met in order proceed with the implementation.
+•	Entry and exit criteria are flexible benchmarks. If they are not met, the test team will assess the risk, identify mitigation actions and provide a recommendation.  
+•	Entry criteria to start the execution phase of the test: the activities listed in the Test Planning section of the schedule are 100% completed.
+•	Entry criteria to start each cycle: the activities listed in the Test Execution section of the schedule.
+5.2  Test management tool
+•	The tool uses cppunit integrated in Netbeans IDE.
+•	The test cases are prepared and fed to cppunit. Obtained output be checked against expected output
+7.Conclusion:
+This document gives a brief description of the testing to be done to verify the correctness and identify the bugs in the software.
+
+
+
+
